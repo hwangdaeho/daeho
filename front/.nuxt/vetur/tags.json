@@ -1,0 +1,14 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Toggle": {
+    "description": "Auto imported from components/Toggle.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "LayoutsHeader": {
+    "description": "Auto imported from components/layouts/Header.vue"
+  }
+}

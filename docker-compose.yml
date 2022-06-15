@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+   front:
+        image: ghkdeogh/nuxt-project
+        container_name: nuxt_front
+        restart: always
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./front:/app
+        networks:
+            - app-network
+   back:
+       image: ghkdeogh/laravel-project
+       container_name: laravel_back
+       restart: always
+       ports:
+           - "80:80"
+       volumes:
+           - ./back:/app
+       networks:
+           - app-network
+
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
+
+
